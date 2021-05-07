@@ -8,7 +8,7 @@ const useFetch = (searchQuery) => {
 
     useEffect(() => {
         setLoading(true)
-        var url = "http://www.omdbapi.com/?s=" + searchQuery + "&apikey=48fb6645";
+        var url = "https://www.omdbapi.com/?s=" + searchQuery + "&apikey=48fb6645";
         axios.get(url)
             .then(rawdata => {
                 setData(rawdata.data)
