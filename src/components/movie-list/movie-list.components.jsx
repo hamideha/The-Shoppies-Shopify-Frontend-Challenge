@@ -21,15 +21,17 @@ const MovieList = ({ searchQuery }) => {
 
     if (movieData.Response === "True") {
         return (
-            movieData.Search.map(movie => {
+            movieData.Search.map(movieRes => {
                 return <MovieCard
                     mode="Add"
-                    key={movie.imdbID}
-                    title={movie.Title}
-                    year={movie.Year}
-                    poster={movie.Poster}
-                    disabled={nominations.includes(movie) || nominationsComplete}
-                    onAdd={() => handleAdd(movie)}
+                    key={movieRes.imdbID}
+                    title={movieRes.Title}
+                    year={movieRes.Year}
+                    poster={movieRes.Poster}
+                    disabled={nominations.find(movie => {  // We're disabling the add button if the imdbID is already found in one of the   movie object in the nominations array
+                        return movie.imdbID === movieRes.imdbID
+                    }) || nominationsComplete}
+                    onAdd={() => handleAdd(movieRes)}
                 />
             })
         )
