@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/TheShoppies/static/css/main.c46a6396.chunk.css",
-    "main.js": "/TheShoppies/static/js/main.119d694d.chunk.js",
-    "main.js.map": "/TheShoppies/static/js/main.119d694d.chunk.js.map",
-    "runtime-main.js": "/TheShoppies/static/js/runtime-main.202101d8.js",
-    "runtime-main.js.map": "/TheShoppies/static/js/runtime-main.202101d8.js.map",
-    "static/css/2.d4c11ccb.chunk.css": "/TheShoppies/static/css/2.d4c11ccb.chunk.css",
-    "static/js/2.36e32a97.chunk.js": "/TheShoppies/static/js/2.36e32a97.chunk.js",
-    "static/js/2.36e32a97.chunk.js.map": "/TheShoppies/static/js/2.36e32a97.chunk.js.map",
-    "index.html": "/TheShoppies/index.html",
-    "static/css/2.d4c11ccb.chunk.css.map": "/TheShoppies/static/css/2.d4c11ccb.chunk.css.map",
-    "static/css/main.c46a6396.chunk.css.map": "/TheShoppies/static/css/main.c46a6396.chunk.css.map",
-    "static/js/2.36e32a97.chunk.js.LICENSE.txt": "/TheShoppies/static/js/2.36e32a97.chunk.js.LICENSE.txt"
+    "main.css": "/The-Shoppies-Shopify-Frontend-Challenge/static/css/main.c46a6396.chunk.css",
+    "main.js": "/The-Shoppies-Shopify-Frontend-Challenge/static/js/main.119d694d.chunk.js",
+    "main.js.map": "/The-Shoppies-Shopify-Frontend-Challenge/static/js/main.119d694d.chunk.js.map",
+    "runtime-main.js": "/The-Shoppies-Shopify-Frontend-Challenge/static/js/runtime-main.cd359711.js",
+    "runtime-main.js.map": "/The-Shoppies-Shopify-Frontend-Challenge/static/js/runtime-main.cd359711.js.map",
+    "static/css/2.d4c11ccb.chunk.css": "/The-Shoppies-Shopify-Frontend-Challenge/static/css/2.d4c11ccb.chunk.css",
+    "static/js/2.36e32a97.chunk.js": "/The-Shoppies-Shopify-Frontend-Challenge/static/js/2.36e32a97.chunk.js",
+    "static/js/2.36e32a97.chunk.js.map": "/The-Shoppies-Shopify-Frontend-Challenge/static/js/2.36e32a97.chunk.js.map",
+    "index.html": "/The-Shoppies-Shopify-Frontend-Challenge/index.html",
+    "static/css/2.d4c11ccb.chunk.css.map": "/The-Shoppies-Shopify-Frontend-Challenge/static/css/2.d4c11ccb.chunk.css.map",
+    "static/css/main.c46a6396.chunk.css.map": "/The-Shoppies-Shopify-Frontend-Challenge/static/css/main.c46a6396.chunk.css.map",
+    "static/js/2.36e32a97.chunk.js.LICENSE.txt": "/The-Shoppies-Shopify-Frontend-Challenge/static/js/2.36e32a97.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.202101d8.js",
+    "static/js/runtime-main.cd359711.js",
     "static/css/2.d4c11ccb.chunk.css",
     "static/js/2.36e32a97.chunk.js",
     "static/css/main.c46a6396.chunk.css",
