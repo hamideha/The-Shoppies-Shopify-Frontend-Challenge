@@ -1,48 +1,40 @@
-import { useState, useEffect } from 'react'
-import axios from 'axios'
+import { useContext } from 'react'
+import useFetch from '../../hooks/useFetch'
+import { Context } from '../../store/state'
 
 import MovieCard from '../movie-card/movie-card.component'
-import Notification from '../notification/notification.component'
+import Empty from '../empty/empty.component'
 
 const MovieList = ({ searchQuery }) => {
-    const [movieData, setData] = useState({})
-    const [loading, setLoading] = useState(true)
-    const [error, setError] = useState()
+    const { state: { nominations, nominationsComplete }, dispatch } = useContext(Context);
 
-    const nominated = []
+    const { movieData, error } = useFetch(searchQuery)
+
     const handleAdd = (movie) => {
-        const { Year, Title, Poster, imdbID } = movie
-        nominated.push({ Year, Title, Poster, imdbID })
-        localStorage.setItem("nominated", JSON.stringify(nominated));
+        movie.disabled = true
+        dispatch({ type: 'ADD_NOMINATION', payload: movie })
     }
 
-    useEffect(() => {
-        setLoading(true)
-        var url = "http://www.omdbapi.com/?s=" + searchQuery + "&apikey=48fb6645";
-        axios.get(url)
-            .then(rawdata => {
-                setData(rawdata.data)
-                setLoading(false)
-            })
-            .catch(err => {
-                setError(err)
-            })
-    }, [searchQuery])
+    if (error) {
+        return <Empty content={error.message + " :("} />
+    }
 
     if (movieData.Response === "True") {
         return (
             movieData.Search.map(movie => {
                 return <MovieCard
+                    mode="Add"
                     key={movie.imdbID}
                     title={movie.Title}
                     year={movie.Year}
                     poster={movie.Poster}
+                    disabled={nominations.includes(movie) || nominationsComplete}
                     onAdd={() => handleAdd(movie)}
                 />
             })
         )
     } else {
-        return <Notification content={'Your search did not return any results'} />
+        return <Empty content='Your search did not return any results' />
     }
 }
 
