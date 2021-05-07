@@ -1,0 +1,41 @@
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+}
+
+.inputGroup {
+  margin: 0 0px 20px;
+  padding: 0;
+  border-style: none;
+  box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.35);
+  background-color: white;
+  border-radius: 4px;
+
+  .FormRow {
+    display: flex;
+    -ms-flex-align: center;
+    margin: 0 15px;
+
+    .FormRowLabel {
+      display: flex;
+      align-items: center;
+      width: 15%;
+      min-width: 90px;
+      padding: 11px 20px 11px 0;
+      color: #96bf48;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+
+    .FormRowInput {
+      font-size: 16px;
+      width: 100%;
+      padding: 9px 25px 11px 0;
+      color: #000;
+      border-radius: 4px;
+    }
+  }
+}

@@ -13476,6 +13476,7 @@ resolve@1.18.1:
     react: ^17.0.2
     react-dom: ^17.0.2
     react-scripts: 4.0.3
+    spectre.css: ^0.5.9
   languageName: unknown
   linkType: soft
 
@@ -13771,6 +13772,13 @@ resolve@1.18.1:
     select-hose: ^2.0.0
     spdy-transport: ^3.0.0
   checksum: 388d39324d706a0a73d1d16fa93397029b3eb47ff2aaa3ad58c3d9c7682ce53eb847795560dc08190b7e3f8404e8bf4814ff3fd74cf0c849796310f1cd8a5f92
+  languageName: node
+  linkType: hard
+
+"spectre.css@npm:^0.5.9":
+  version: 0.5.9
+  resolution: "spectre.css@npm:0.5.9"
+  checksum: a3f7a180afe66f6d09fece514786246dbf9cb5a0e10ddb12eee268f53a606d73adb0524ac8ebccde23996b6f1f1051eecf4c794070a9455dafe272f516726d2a
   languageName: node
   linkType: hard
 
