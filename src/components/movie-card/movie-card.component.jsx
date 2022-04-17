@@ -26,6 +26,7 @@ const MovieCard = ({ title, year, poster, onAdd, disabled, mode }) => {
                     <button className={`btn btn-primary mr-2 ${disabled ? "disabled" : ""}`}
                         onClick={onAdd}
                         style={{ backgroundColor: "#96bf48", borderColor: "#96bf48" }}
+                        disabled={disabled}
                     >
                         {/* {mode} Nomination */}
                         {mode === "Add" ?
