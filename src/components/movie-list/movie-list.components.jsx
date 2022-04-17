@@ -11,6 +11,7 @@ const MovieList = ({ searchQuery }) => {
     const { movieData, error } = useFetch(searchQuery)
 
     const handleAdd = (movie) => {
+        movie.disabled = true
         dispatch({ type: 'ADD_NOMINATION', payload: movie })
     }
 
