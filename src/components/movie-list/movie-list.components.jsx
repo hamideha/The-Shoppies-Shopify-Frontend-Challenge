@@ -27,7 +27,7 @@ const MovieList = ({ searchQuery }) => {
                     title={movieRes.Title}
                     year={movieRes.Year}
                     poster={movieRes.Poster}
-                    disabled={nominations.find(movie => {  // We're disabling the add button if the imdbID is already found in one of the   movie object in the nominations array
+                    disabled={nominations.find(movie => {  // We're disabling the add button if the imdbID is already found in one of the   movie object in the nominations array.
                         return movie.imdbID === movieRes.imdbID
                     }) || nominationsComplete}
                     onAdd={() => handleAdd(movieRes)}
